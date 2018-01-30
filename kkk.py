@@ -3,7 +3,7 @@ x = input("a: ")
 y = input("b: ")
 
 def chek(a, b):
-    if type(int(a)) and type(int(b)) != int:
+    if type(a) !=int or type(b) != int:
         return("str")
     else:
         if int(a) > int(b):
@@ -12,4 +12,4 @@ def chek(a, b):
             return("<")
         else:
             return("=")
-print(chek(1, 2))
+print(chek(x, y))
