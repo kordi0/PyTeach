@@ -3,7 +3,7 @@ x = input("a: ")
 y = input("b: ")
 
 def chek(a, b):
-    if type(a) !=int or type(b) != int:
+    if isinstance(a, str) or isinstance(b, str):
         return("str")
     else:
         if int(a) > int(b):
